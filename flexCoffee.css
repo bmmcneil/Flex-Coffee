@@ -52,7 +52,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../Flex-Coffee/Images/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
+    background-image: url("../Flex-Coffee/assets/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -112,10 +112,91 @@ header {
 }
 
 .dark-roast-text p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 2;;
+    width: 80%;
 }
 
 .dark-roast-text h2 {
-    font-size: 1.5rem;
-    line-height: 3;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.medium-roast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.medium-roast div {
+    width: 100%;
+    height: 30rem;
+}
+
+.medium-roast div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.medium-roast-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    font-family: Cabin;
+    color: #FCFAF5;
+    background-color:#592A01;
+}
+
+.medium-roast-text p {
+    font-size: 1.3rem;
+    line-height: 2;;
+    width: 80%;
+}
+
+.medium-roast-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.light-roast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.light-roast div {
+    width: 100%;
+    height: 30rem;
+}
+
+.light-roast div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.light-roast-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    font-family: Cabin;
+    color: #FCFAF5;
+    background-color:#874800;
+}
+
+.light-roast-text p {
+    font-size: 1.3rem;
+    line-height: 2;;
+    width: 80%;
+}
+
+.light-roast-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
 }
