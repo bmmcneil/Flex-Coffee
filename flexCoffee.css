@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-    display: inline;
+    display: inline-block;
     font-family: Pacifico;
     font-size: 1.5rem;
     padding: 1rem;
@@ -43,9 +43,31 @@ header {
     text-underline-offset: .2rem;
 }
 
-.banner {
-    justify-content: center;
-    align-items: center;
+@media only screen and (max-width: 985px){
+    .navbar li {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    
+    header {
+        height: 5rem;
+        z-index: 5;
+        border: none;
+    }
+
+    .logo {
+        text-align: center;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .navbar li {
+        display: none;
+        
+    }
 }
 
 .banner {
@@ -74,6 +96,24 @@ header {
     border-radius: 5px;
 }
 
+@media only screen and (max-width: 985px){
+    .bannerText {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .bannerText {
+        font-size: 1rem;
+        right: -25%;
+    }
+
+    .banner {
+        height: 22rem;
+        z-index: 1;
+    }
+}
+
 .roasts {
     margin: 3rem 0 1rem 0;
     padding: 0 0 1rem 0;
@@ -84,6 +124,14 @@ header {
     font-size: 1.5rem;
     font-family: Cabin;
     color: #361E00;
+}
+
+@media only screen and (max-width: 640px){
+    .roasts {
+        font-size: 1rem;
+        margin: 0;
+        padding: 1rem 0;
+    }
 }
 
 .dark-roast {
@@ -120,7 +168,7 @@ header {
 
 .dark-roast-text h2 {
     font-size: 2.2rem;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .medium-roast {
@@ -168,6 +216,7 @@ header {
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    
 }
 
 .light-roast div {
@@ -199,7 +248,121 @@ header {
 
 .light-roast-text h2 {
     font-size: 2.2rem;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media only screen and (max-width: 985px) {
+    .dark-roast-text p {
+        font-size: 1.1rem;
+        line-height: 2;;
+        width: 80%;
+    }
+    
+    .dark-roast-text h2 {
+        font-size: 1.75rem;
+    }
+
+    .medium-roast-text p {
+        font-size: 1.1rem;
+        line-height: 2;;
+        width: 80%;
+    }
+    
+    .medium-roast-text h2 {
+        font-size: 1.75rem;
+    }
+    
+    .light-roast-text p {
+        font-size: 1.1rem;
+        line-height: 2;;
+        width: 80%;
+    }
+    
+    .light-roast-text h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .dark-roast {
+            display:flex;
+            height: 20rem;
+            width: 100%;
+            background-color: #2B1800;
+        }   
+        
+        .dark-roast div {
+            width: 100%;
+            height: 20rem;
+        }
+        .dark-roast div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    .dark-roast h2 {
+        font-size: 1.25rem;
+        padding-bottom: 1rem;
+    }
+
+    .dark-roast p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        width: 80%;
+    }
+
+    .medium-roast {
+        display:flex;
+        height: 20rem;
+        width: 100%;
+        background-color: #2B1800;
+    }   
+    
+    .medium-roast div {
+        width: 100%;
+        height: 20rem;
+    }
+    .medium-roast div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+.medium-roast h2 {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.medium-roast p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    width: 80%;
+}
+.light-roast {
+    display:flex;
+    height: 20rem;
+    width: 100%;
+}   
+
+.light-roast div {
+    width: 100%;
+    height: 20rem;
+}
+.light-roast div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.light-roast h2 {
+font-size: 1.25rem;
+padding-bottom: 1rem;
+}
+
+.light-roast p {
+font-size: 0.9rem;
+line-height: 1.5;
+width: 80%;
+}
+
 }
 
 .trade-section {
@@ -232,6 +395,22 @@ header {
     color: #361E00;
 }
 
+@media only screen and (max-width: 640px){
+    .trade-section h2 {
+        padding: 1rem 0 0.5rem 0;
+        width: 80%;
+        font-size: 1.1rem;
+        text-decoration: none;
+        border: 1.5px solid black;
+        border-radius: 5px;
+    }
+
+    .trade-section p {
+        width: 60%;
+        font-size: 1rem;
+    }
+}
+
 .img-container {
     display: flex;
     justify-content: space-evenly;
@@ -246,7 +425,6 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
 }
 
 .square img{
@@ -271,6 +449,35 @@ header {
     border: 1.3px solid black;
     border-radius: 5px;
     background-color: white;
+}
+
+@media only screen and (max-width: 985px) {
+    .img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 105rem;
+    }
+
+    .square-text {
+        font-size: 1.3rem;
+    }
+    
+}
+
+@media only screen and (max-width: 640px) {
+    .img-container {
+        height: 90rem;
+    }
+
+    .square-text {
+        font-size: 1rem;
+        padding: 1rem;
+        width: 18rem;
+        height: 5rem;
+    }
+    
 }
 
 .locations {
@@ -330,6 +537,26 @@ header {
     line-height: 1.5;
 }
 
+@media only screen and (max-width: 640px) {
+    .locations h2{
+        font-size: 1.2rem;
+    }
+    
+    .locations p {
+        font-size: 1rem;
+    }
+
+    .locations-container {
+        flex-direction: column;
+        height: 30rem;
+    }
+
+    .locations-square {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
 footer div{
     width: 100%;
     height: 5rem;
@@ -360,4 +587,19 @@ footer div ul li a{
 footer div ul li a:hover {
     text-decoration: underline;
     text-underline-offset: 0.2rem;
+}
+
+@media only screen and (max-width: 985px){
+    
+}
+
+@media only screen and (max-width: 640px){
+    footer div{
+        height: 4rem;
+    }
+    
+    footer div ul li {
+        text-align: center;
+        font-size: 1rem;
+    }
 }
